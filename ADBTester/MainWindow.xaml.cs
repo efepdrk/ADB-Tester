@@ -31,6 +31,7 @@ namespace ADBTester
         public MainWindow()
         {
             InitializeComponent();
+            MessageBox.Show("Bu program tamamlanmamış ve halen çalışma altında olan bir deneme sürümüdür.","Uyarı",MessageBoxButton.OK,MessageBoxImage.Information);
 
         }
 
