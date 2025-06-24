@@ -14,7 +14,7 @@ namespace ADBTester.services
         {
             try
             {
-                
+                // Create a SaveFileDialog
                 var saveFileDialog = new SaveFileDialog
                 {
                     Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*",
@@ -23,10 +23,10 @@ namespace ADBTester.services
                     InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
                 };
 
-              
+                // Show the dialog and check if the user clicked OK
                 if (saveFileDialog.ShowDialog() == true)
                 {
-                  
+                    // Write items to the selected file
                     File.WriteAllLines(saveFileDialog.FileName, items);
 
                     MessageBox.Show("Kayıt başarılı!", "Save Complete", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -43,7 +43,7 @@ namespace ADBTester.services
         {
             try
             {
-        
+                // Create an OpenFileDialog
                 var openFileDialog = new OpenFileDialog
                 {
                     Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*",
@@ -51,14 +51,15 @@ namespace ADBTester.services
                     InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
                 };
 
-  
+                // Show the dialog and check if the user clicked OK
                 if (openFileDialog.ShowDialog() == true)
                 {
-           
+                    // Read all lines from the selected file
                     var lines = File.ReadAllLines(openFileDialog.FileName);
 
                     MessageBox.Show("Kayıt başarıyla yüklendi!", "Load Complete", MessageBoxButton.OK, MessageBoxImage.Information);
 
+                    // Return the loaded lines
                     return lines;
                 }
             }
@@ -67,7 +68,7 @@ namespace ADBTester.services
                 MessageBox.Show($"Kayıt yüklenirken hata: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-
+            // Return an empty list if loading fails
             return Enumerable.Empty<string>();
         }
     }

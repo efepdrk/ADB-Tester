@@ -22,8 +22,8 @@
             </StackPanel>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,0">
-                <TextBox Height="30" Width="200" Margin="20,0,0,0"  Name="pairIP_textbox" Visibility="Hidden"/>
-                <Button Height="30" Width="50"  Content="Pair" Name="btn_Pair" Click="btn_Pair_Click" Visibility="Hidden" />
+                <TextBox Height="30" Width="200" Margin="20,0,0,0"  Name="pairIP_textbox"/>
+                <Button Height="30" Width="50"  Content="Pair" Name="btn_Pair" Click="btn_Pair_Click" />
             </StackPanel>
 
         </StackPanel>

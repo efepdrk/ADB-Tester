@@ -44,6 +44,7 @@ public static class AdbService
                 process.BeginErrorReadLine();
                 await process.WaitForExitAsync();
 
+                // Combine output and error
                 var result = outputBuilder.ToString();
                 if (errorBuilder.Length > 0)
                     result += "Errors:\n" + errorBuilder;
