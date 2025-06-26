@@ -19,3 +19,7 @@ All features listed should currently be working as expected; however, it still i
 ## Planned: 
 - Appium integration
 - More user friendly UI
+- Inputs for starting TV apps
+- Connected Device Info Menu
+- Automatic detection of connectable devices when trying to connect over Network
+  
