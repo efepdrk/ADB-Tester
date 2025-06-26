@@ -1,7 +1,10 @@
 ## Description
 
 My first WPF app.
-Originally developed for test automation via ADB on android TV devices. 
+Originally developed for test automation via ADB on android TV devices.
+
+All features listed should currently be working as expected; however, it still is a very much work in progress program in it's current state.
+
 
 
 ## Features 
