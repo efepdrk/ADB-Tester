@@ -1,14 +1,18 @@
-My first WPF app.
+## Description
 
+My first WPF app.
 Originally developed for test automation via ADB on android TV devices. 
 
 
-Features include:
+## Features 
 
-ADB over USB or Network,
-Recording inputs , saving and loading inputs to and from a file , playback of recorded inputs and ability to set how many times the  loaded inputs should be repeated
+- ADB over USB or Network
+- Recording inputs
+- Saving and loading inputs to and from a file
+- Playback of recorded inputs
+- Ability to play the recording multiple times
 
 
-Planned: 
-Appium integration
-More user friendly UI
+## Planned: 
+- Appium integration
+- More user friendly UI
